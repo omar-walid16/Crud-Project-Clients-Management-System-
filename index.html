@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="main-page container-fluid w-75 mx-auto mt-3">
+            <h2 class="fw-bold py-4">Clients Management System</h2>
+            <label for="clientsNameInput" class="py-2">Your Name :</label>
+            <input type="text" id="clientsNameInput" placeholder="" class="form-control">
+
+            <label for="clientsBudgetInput" class="py-2">Your Budget :</label>
+            <input type="number" id="clientsBudgetInput" placeholder="" class="form-control">
+
+            <label for="clientsJobInput" class="py-2">Your Job :</label>
+            <input type="text" id="clientsJobInput" placeholder="" class="form-control">
+
+            <label for="clientsOrderInput" class="py-2">Your Order :</label>
+            <textarea type="text" id="clientsOrderInput" placeholder="" class="form-control"></textarea>
+
+            <button class="btn btn-outline-info my-3" onclick="addOrder ();">Add Order</button>
+        </header>
+        <section class="search w-50 mx-auto py-5">
+            <input = oninput="searchOrders(this.value)" type="text" id="clientsSearchInput" placeholder="Search" class="form-control">
+        </section>
+        <footer class="display-orders">
+            <table class="table w-75 mx-auto">
+                <thead class="text-center">
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Budget</th>
+                    <th>Job</th>
+                    <th>Order</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody" class="text-center">
+                    
+                </tbody>
+            </table>
+        </footer>
+
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
